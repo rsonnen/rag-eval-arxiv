@@ -1,0 +1,33 @@
+name: "Reinforcement Learning Papers"
+
+corpus_context: >
+  200 arXiv papers on reinforcement learning from cs.LG, cs.AI, and
+  eess.SY. Topics include policy gradient methods (TD3, actor-critic),
+  model-based RL (world models, dynamics identification), multi-agent RL,
+  Q-learning and value-based methods, control theory applications, and
+  MDP frameworks. Mix of algorithmic contributions and applications to
+  robotics and control systems.
+
+scenarios:
+  graduate_exam:
+    name: "Graduate RL Exam"
+    description: >
+      You are creating questions for a graduate reinforcement learning
+      course. Questions should test understanding of value functions,
+      policy optimization, exploration strategies, and sample efficiency.
+      Focus on algorithmic contributions and theoretical foundations.
+
+  research_review:
+    name: "RL Research Paper Review"
+    description: >
+      You are creating questions to evaluate thorough understanding of an
+      RL paper. Questions should test understanding of the algorithm,
+      environment setup, hyperparameter sensitivity, and comparison to
+      baselines. Focus on reproducibility-relevant details.
+
+  rag_eval:
+    name: "RAG System Evaluation"
+    description: >
+      You are creating questions to test whether a retrieval system read
+      this paper. Questions must have specific answers - environment names,
+      reward structures, training steps, performance metrics.

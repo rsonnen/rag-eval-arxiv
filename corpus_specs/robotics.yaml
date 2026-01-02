@@ -1,0 +1,33 @@
+# Robotics
+# Papers on robot systems, manipulation, navigation, and control
+
+robotics:
+  category: cs.RO
+  query_terms:
+    - robot
+    - manipulation
+    - navigation
+    - grasping
+    - motion planning
+
+  target_count: 200
+  description: |
+    Papers whose PRIMARY focus is robotics systems and methods.
+    This includes:
+    - Robot manipulation and grasping
+    - Motion planning and trajectory optimization
+    - Robot navigation and SLAM
+    - Human-robot interaction
+    - Legged and mobile robots
+    - Robot learning and imitation learning
+    - Multi-robot systems
+    - Soft robotics and novel mechanisms
+
+    NOT relevant:
+    - Pure control theory without robot application
+    - Computer vision papers tested on robot datasets
+    - Simulation environments without robotics contribution
+    - Autonomous vehicles (separate domain)
+
+  evaluator_model: gpt-5-mini
+  confidence_threshold: 0.7

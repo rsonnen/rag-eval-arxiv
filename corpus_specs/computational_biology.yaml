@@ -1,0 +1,35 @@
+# Computational Biology
+# Papers on bioinformatics, genomics, and computational approaches to biology
+
+computational_biology:
+  category: q-bio.QM
+  secondary_categories:
+    - q-bio.GN
+    - q-bio.BM
+  query_terms:
+    - genomics
+    - protein
+    - bioinformatics
+    - sequencing
+    - molecular
+
+  target_count: 200
+  description: |
+    Papers whose PRIMARY focus is computational methods for biological problems.
+    This includes:
+    - Genomic sequence analysis and annotation
+    - Protein structure prediction and analysis
+    - Gene expression analysis and RNA-seq methods
+    - Phylogenetic and evolutionary analysis
+    - Drug discovery and molecular docking
+    - Biological network analysis
+    - Single-cell analysis methods
+
+    NOT relevant:
+    - Pure wet-lab biology papers with minimal computational content
+    - Medical/clinical papers that use standard bioinformatics tools
+    - Papers that mention biology only as a potential application
+    - General ML papers tested on biological datasets
+
+  evaluator_model: gpt-5-mini
+  confidence_threshold: 0.7

@@ -1,0 +1,31 @@
+# Information Retrieval
+# Papers on search, ranking, and document retrieval systems
+
+information_retrieval:
+  category: cs.IR
+  query_terms:
+    - retrieval
+    - ranking
+    - search
+    - embeddings
+
+  target_count: 200
+  description: |
+    Papers whose PRIMARY focus is information retrieval systems and methods.
+    This includes:
+    - Document retrieval and ranking algorithms
+    - Dense and sparse retrieval methods
+    - Query understanding and expansion
+    - Learning to rank
+    - Semantic search and embedding-based retrieval
+    - Passage retrieval for QA systems
+    - Cross-lingual and multilingual retrieval
+
+    NOT relevant:
+    - Papers that use retrieval as a minor component (e.g., RAG systems focused on generation)
+    - Pure recommendation systems without retrieval focus
+    - General NLP papers that mention "retrieval" in passing
+    - Web crawling or indexing infrastructure papers
+
+  evaluator_model: gpt-5-mini
+  confidence_threshold: 0.7

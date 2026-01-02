@@ -1,0 +1,33 @@
+# Computer Vision
+# Papers on image processing, object detection, and visual understanding
+
+computer_vision:
+  category: cs.CV
+  query_terms:
+    - vision
+    - detection
+    - segmentation
+    - recognition
+    - image
+
+  target_count: 200
+  description: |
+    Papers whose PRIMARY focus is computer vision methods and systems.
+    This includes:
+    - Object detection and recognition
+    - Image and video segmentation
+    - Visual understanding and scene analysis
+    - Image generation and synthesis
+    - 3D vision and depth estimation
+    - Visual tracking and motion analysis
+    - Medical image analysis
+    - Document and OCR systems
+
+    NOT relevant:
+    - Multimodal papers where vision is a minor component
+    - Papers using standard CV models as feature extractors
+    - Robotics papers with basic vision components
+    - Pure graphics or rendering papers
+
+  evaluator_model: gpt-5-mini
+  confidence_threshold: 0.7

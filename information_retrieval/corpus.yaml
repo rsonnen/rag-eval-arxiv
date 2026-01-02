@@ -1,0 +1,43 @@
+name: "Information Retrieval Papers"
+
+corpus_context: >
+  200 arXiv papers on information retrieval from category cs.IR. Search
+  query targeted retrieval, ranking, search, and embeddings. Papers focus
+  on production-scale search systems, dense embeddings combined with
+  lexical retrieval (BM25), and practical deployment challenges. Topics
+  include domain-aware text embeddings, multi-stage retrieval pipelines,
+  and evaluation combining offline metrics with online A/B testing.
+  Emphasis on applied IR with real-world constraints.
+
+scenarios:
+  graduate_exam:
+    name: "Graduate Information Retrieval Exam"
+    description: >
+      You are creating questions for an exam in a graduate IR course.
+      Questions should test understanding of retrieval models, ranking
+      functions, embedding methods, and evaluation metrics. Focus on
+      how methods address retrieval challenges like vocabulary mismatch,
+      query ambiguity, and relevance estimation.
+
+  systems_review:
+    name: "Search Systems Paper Review"
+    description: >
+      You are creating questions to evaluate understanding of a search
+      systems paper. Questions should test understanding of the retrieval
+      architecture, indexing strategy, ranking model, and evaluation
+      methodology. Focus on engineering trade-offs and scalability.
+
+  industry_practice:
+    name: "Search Engineering Practice"
+    description: >
+      You are creating questions to evaluate a search engineer's
+      understanding of retrieval methods. Questions should test ability
+      to choose appropriate retrieval strategies, understand latency/
+      quality trade-offs, and interpret evaluation metrics.
+
+  rag_eval:
+    name: "RAG System Evaluation"
+    description: >
+      You are creating questions to test whether a retrieval system read
+      this paper. Questions must have specific answers - exact metrics,
+      dataset sizes, model configurations, baseline comparisons.

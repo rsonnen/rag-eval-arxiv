@@ -1,0 +1,36 @@
+# Machine Learning Interpretability / Explainability
+# Papers specifically about explaining ML model decisions
+
+ml_interpretability:
+  # Search parameters (broad is OK - LLM will filter)
+  category: cs.LG
+  secondary_categories:
+    - cs.AI
+  query_terms:
+    - interpretability
+    - explainability
+    - XAI
+    - SHAP
+    - LIME
+
+  # Curation parameters
+  target_count: 200
+  description: |
+    Papers whose PRIMARY focus is explaining or interpreting machine learning
+    model decisions. This includes:
+    - Feature attribution methods (SHAP, LIME, integrated gradients)
+    - Attention visualization and analysis
+    - Saliency maps and gradient-based explanations
+    - Concept-based explanations
+    - Post-hoc explanation methods
+    - Interpretable model architectures
+
+    NOT relevant:
+    - Papers that merely MENTION interpretability in passing
+    - Papers that use ML to explain other domains (biology, physics, etc.)
+    - Papers where interpretability is a minor side benefit, not the focus
+    - General ML papers that claim to be "interpretable" without XAI methodology
+
+  # LLM evaluation config
+  evaluator_model: gpt-5-mini
+  confidence_threshold: 0.7

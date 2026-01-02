@@ -1,0 +1,33 @@
+name: "Quantum Computing Papers"
+
+corpus_context: >
+  200 arXiv papers on quantum computing, primarily from quant-ph (93%).
+  Topics include quantum hardware (superconducting qubits, fluxoniums,
+  photonic systems), quantum algorithms (VQE, QAOA, variational methods),
+  quantum gates and circuits, quantum error correction, quantum simulation
+  for chemistry, and hybrid classical-quantum approaches. Mix of theoretical
+  frameworks and practical implementations.
+
+scenarios:
+  graduate_exam:
+    name: "Graduate Quantum Computing Exam"
+    description: >
+      You are creating questions for a graduate course on quantum computing.
+      Questions should test understanding of quantum algorithms, circuit
+      design, error correction schemes, and hardware constraints. Focus
+      on how theoretical concepts translate to practical implementations.
+
+  research_review:
+    name: "Quantum Computing Paper Review"
+    description: >
+      You are creating questions to evaluate thorough understanding of a
+      quantum computing paper. Questions should test understanding of the
+      quantum circuit or algorithm proposed, noise models considered,
+      comparison to classical alternatives, and experimental validation.
+
+  rag_eval:
+    name: "RAG System Evaluation"
+    description: >
+      You are creating questions to test whether a retrieval system read
+      this paper. Questions must have specific answers - qubit counts,
+      gate fidelities, circuit depths, specific Hamiltonians studied.

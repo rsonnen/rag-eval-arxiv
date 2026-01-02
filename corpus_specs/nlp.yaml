@@ -1,0 +1,33 @@
+# Natural Language Processing
+# Papers on computational linguistics, text analysis, and language models
+
+nlp:
+  category: cs.CL
+  query_terms:
+    - language model
+    - NLP
+    - text
+    - parsing
+    - semantics
+
+  target_count: 200
+  description: |
+    Papers whose PRIMARY focus is natural language processing methods.
+    This includes:
+    - Language model architectures and training
+    - Text classification and sentiment analysis
+    - Named entity recognition and information extraction
+    - Machine translation
+    - Question answering and reading comprehension
+    - Text generation and summarization
+    - Syntactic and semantic parsing
+    - Dialogue systems and conversational AI
+
+    NOT relevant:
+    - Papers that use LLMs as tools for other domains
+    - Speech recognition/synthesis (audio focus)
+    - Multimodal papers where text is secondary
+    - Papers benchmarking existing models without methodological contribution
+
+  evaluator_model: gpt-5-mini
+  confidence_threshold: 0.7

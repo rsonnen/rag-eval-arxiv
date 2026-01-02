@@ -1,0 +1,35 @@
+# Reinforcement Learning
+# Papers on RL algorithms, policies, and decision-making systems
+
+reinforcement_learning:
+  category: cs.LG
+  secondary_categories:
+    - cs.AI
+  query_terms:
+    - reinforcement learning
+    - policy gradient
+    - Q-learning
+    - MDP
+    - reward
+
+  target_count: 200
+  description: |
+    Papers whose PRIMARY focus is reinforcement learning methods.
+    This includes:
+    - RL algorithms (policy gradient, Q-learning, actor-critic)
+    - Model-based and model-free RL
+    - Multi-agent reinforcement learning
+    - Offline and batch RL
+    - Inverse reinforcement learning
+    - Hierarchical RL
+    - Safe and constrained RL
+    - RL theory and sample complexity
+
+    NOT relevant:
+    - Papers that use RL as a minor training component
+    - LLM alignment papers using RLHF (focus is on LLMs, not RL)
+    - Game-playing papers focused on the game, not RL methodology
+    - Control theory papers without learning component
+
+  evaluator_model: gpt-5-mini
+  confidence_threshold: 0.7

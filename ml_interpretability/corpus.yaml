@@ -1,0 +1,44 @@
+name: "ML Interpretability Papers"
+
+corpus_context: >
+  200 arXiv papers on machine learning interpretability and explainability,
+  from categories cs.LG and cs.AI. Search query targeted interpretability,
+  explainability, XAI, SHAP, and LIME. Topics include mechanistic analysis
+  of neural networks (Transformers, LLMs, CNNs), explanation methods,
+  interpretable architectures (sparse autoencoders, Kolmogorov-Arnold
+  Networks), faithfulness of explanations, and domain applications in
+  medical imaging, finance, and code understanding. Papers dated Nov-Dec 2025.
+
+scenarios:
+  graduate_exam:
+    name: "Graduate ML Interpretability Exam"
+    description: >
+      You are creating questions for an exam in a graduate course on
+      interpretable machine learning. Questions should test understanding
+      of explanation methods, their theoretical foundations, faithfulness
+      criteria, and trade-offs between interpretability and performance.
+      Focus on methodology and critical evaluation of approaches.
+
+  research_review:
+    name: "XAI Research Paper Review"
+    description: >
+      You are creating questions to evaluate whether a reviewer thoroughly
+      understood an XAI paper. Questions should test understanding of the
+      specific explanation method proposed, how it compares to baselines
+      like SHAP or LIME, evaluation metrics used, and acknowledged
+      limitations. Focus on technical contributions.
+
+  practitioner_eval:
+    name: "ML Practitioner Evaluation"
+    description: >
+      You are creating questions to evaluate an ML practitioner's ability
+      to apply interpretability methods. Questions should test understanding
+      of when to use different explanation approaches, how to validate
+      explanations, and practical deployment considerations.
+
+  rag_eval:
+    name: "RAG System Evaluation"
+    description: >
+      You are creating questions to test whether a retrieval system read
+      this paper. Questions must have specific answers - particular model
+      architectures, exact metrics, named datasets, specific baselines.

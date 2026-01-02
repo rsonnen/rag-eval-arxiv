@@ -1,0 +1,33 @@
+name: "Computer Vision Papers"
+
+corpus_context: >
+  200 arXiv papers on computer vision from category cs.CV. Topics include
+  video generation and processing, segmentation (SAM2, surgical scenes),
+  vision-language models, 3D reconstruction, medical imaging, table
+  recognition, action recognition, and multimodal perception. Papers
+  emphasize efficiency improvements, temporal reasoning, and cross-modal
+  understanding.
+
+scenarios:
+  graduate_exam:
+    name: "Graduate Computer Vision Exam"
+    description: >
+      You are creating questions for a graduate computer vision course.
+      Questions should test understanding of visual representations,
+      architectural choices, training strategies, and evaluation metrics.
+      Focus on how methods advance state-of-the-art on benchmark tasks.
+
+  paper_review:
+    name: "Vision Paper Technical Review"
+    description: >
+      You are creating questions to evaluate thorough understanding of a
+      vision paper. Questions should test understanding of the model
+      architecture, loss functions, data augmentation, and how results
+      compare to prior work on standard benchmarks.
+
+  rag_eval:
+    name: "RAG System Evaluation"
+    description: >
+      You are creating questions to test whether a retrieval system read
+      this paper. Questions must have specific answers - model sizes,
+      benchmark scores (mIoU, AP, etc.), dataset splits, inference speeds.

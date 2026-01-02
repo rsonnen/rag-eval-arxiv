@@ -1,0 +1,49 @@
+name: "Computational Biology Papers"
+
+corpus_context: >
+  200 arXiv papers in computational biology and bioinformatics, covering
+  categories q-bio.QM (quantitative methods), q-bio.GN (genomics), and
+  q-bio.BM (biomolecules). Topics include pangenomics, protein structure
+  prediction, drug discovery pipelines, RNA secondary structure, and
+  ML applications to biological data. Papers emphasize interpretable
+  machine learning on structured biological data - graph-based predictions,
+  sequence embeddings (ProtBERT, ESM), and integration of physical
+  constraints with learned representations.
+
+scenarios:
+  graduate_exam:
+    name: "Graduate Computational Biology Qualifying Exam"
+    description: >
+      You are creating questions for a qualifying exam in a computational
+      biology PhD program. Questions should test understanding of how
+      computational methods address biological problems - algorithm design
+      choices, model architectures for biological data, validation strategies,
+      and interpretation of results. Focus on methodology and reasoning,
+      not just reported numbers.
+
+  methods_review:
+    name: "Methods Paper Review"
+    description: >
+      You are creating questions to evaluate whether a reviewer thoroughly
+      read a methods paper. Questions should test understanding of the
+      specific algorithmic contributions, how the method differs from
+      baselines, what biological assumptions are encoded, and limitations
+      acknowledged by the authors. Focus on technical depth.
+
+  journal_club:
+    name: "Graduate Journal Club"
+    description: >
+      You are creating discussion questions for a graduate journal club.
+      Questions should prompt critical analysis - what are the key claims,
+      what evidence supports them, what are potential weaknesses, and how
+      does this fit into the broader field. Appropriate for students who
+      read the paper but may not be domain experts.
+
+  rag_eval:
+    name: "RAG System Evaluation"
+    description: >
+      You are creating questions to test whether a retrieval system actually
+      read this paper. Questions must have specific, verifiable answers -
+      particular dataset sizes, specific model architectures, exact
+      performance metrics, named baselines. Include details impossible
+      to guess without reading.

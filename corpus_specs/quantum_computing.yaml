@@ -1,0 +1,33 @@
+# Quantum Computing
+# Papers on quantum computation, algorithms, and hardware
+
+quantum_computing:
+  category: quant-ph
+  secondary_categories:
+    - cs.ET
+  query_terms:
+    - quantum computing
+    - qubit
+    - quantum algorithm
+    - quantum circuit
+
+  target_count: 200
+  description: |
+    Papers whose PRIMARY focus is quantum computing and quantum information.
+    This includes:
+    - Quantum algorithms and complexity
+    - Quantum error correction and fault tolerance
+    - Quantum machine learning
+    - Quantum cryptography and communication
+    - Quantum hardware and qubit implementations
+    - Quantum simulation
+    - Variational quantum algorithms (VQE, QAOA)
+
+    NOT relevant:
+    - Pure quantum physics without computational focus
+    - Classical algorithms inspired by quantum concepts
+    - Papers that mention quantum as future work
+    - Quantum chemistry without algorithmic contribution
+
+  evaluator_model: gpt-5-mini
+  confidence_threshold: 0.7
