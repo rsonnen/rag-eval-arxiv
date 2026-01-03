@@ -4,7 +4,7 @@ Evaluation corpus of curated arXiv academic papers for testing RAG (Retrieval-Au
 
 ## What This Is
 
-This repository contains **evaluation data for RAG systems**, not a document archive. It includes:
+This repository contains **evaluation data for RAG systems**:
 
 1. **corpus.yaml** - Evaluation configuration defining domain context and testing scenarios
 2. **Generated questions** - Validated Q/A pairs for evaluation (where available)
