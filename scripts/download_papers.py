@@ -13,7 +13,7 @@ from pathlib import Path
 import httpx
 
 
-def download_corpus(corpus_dir: Path, delay: float = 1.0) -> None:
+def download_corpus(corpus_dir: Path, delay: float = 1.0, max_docs: int | None = None) -> None:
     """Download all papers in a corpus."""
     metadata_path = corpus_dir / "metadata.json"
     if not metadata_path.exists():
@@ -27,6 +27,8 @@ def download_corpus(corpus_dir: Path, delay: float = 1.0) -> None:
     papers_dir.mkdir(exist_ok=True)
 
     papers = metadata.get("papers", [])
+    if max_docs:
+        papers = papers[:max_docs]
     print(f"Downloading {len(papers)} papers to {papers_dir}")
 
     with httpx.Client(timeout=60.0, follow_redirects=True) as client:
@@ -56,6 +58,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Download papers from a curated corpus")
     parser.add_argument("corpus", help="Corpus directory (e.g., ml_interpretability)")
     parser.add_argument("--delay", type=float, default=1.0, help="Delay between requests (seconds)")
+    parser.add_argument("--max-docs", type=int, help="Maximum number of papers to download")
     args = parser.parse_args()
 
     # Find corpus directory relative to repo root
@@ -67,7 +70,7 @@ def main() -> None:
         print(f"Error: Corpus directory not found: {corpus_dir}", file=sys.stderr)
         sys.exit(1)
 
-    download_corpus(corpus_dir, args.delay)
+    download_corpus(corpus_dir, args.delay, args.max_docs)
 
 
 if __name__ == "__main__":
