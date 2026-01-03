@@ -114,6 +114,14 @@ uv run python arxiv_corpus_builder.py --config ../corpus_specs/ml_interpretabili
 
 Building is resumable - re-run to continue interrupted builds.
 
+## Features
+
+- **Resumable downloads**: Re-run commands to continue interrupted downloads
+- **Rate limiting**: 3 second delay between requests (respects arXiv terms)
+- **Dry run mode**: Search and display results without downloading
+- **Metadata tracking**: JSON metadata for all downloaded papers
+- **Category + keyword search**: Flexible query building from config
+
 ## Metadata Format
 
 ```json
@@ -154,6 +162,23 @@ Building is resumable - re-run to continue interrupted builds.
 | q-bio.* | Quantitative Biology |
 
 Full taxonomy: https://arxiv.org/category_taxonomy
+
+## API Reference
+
+### arXiv API
+
+- **Library**: `arxiv` (Python wrapper)
+- **Rate limit**: 3 seconds between requests
+- **Max results**: 2,000 per query (paginated)
+- **Docs**: https://info.arxiv.org/help/api/
+
+### Query Syntax
+
+- `cat:cs.LG` - Category filter
+- `au:Smith` - Author search
+- `ti:neural` - Title search
+- `abs:explanation` - Abstract search
+- `AND`, `OR`, `ANDNOT` - Boolean operators
 
 ## Licensing
 
